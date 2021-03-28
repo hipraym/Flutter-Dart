@@ -1,0 +1,13 @@
+void main() {
+  List<String> alisverisListem = ['Lavaş','Balık','Elma', 'Muz', 'Portakal', 'Ayva'];
+
+  // print(alisverisListem);
+
+  alisverisListem.add('Üzüm');
+     
+  print('listenin birinci elemanı ${alisverisListem[0]}');
+  print('Listemin son elemanı ${alisverisListem[4]}\n\n\n');
+  
+  print('Listemde ${alisverisListem.length} adet ürün var.');
+  print(alisverisListem);
+  }
