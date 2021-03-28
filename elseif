@@ -1,0 +1,17 @@
+import 'dart:math';
+
+void main() {
+  int piyonsayisi = Random().nextInt(10) + 1;
+  print(piyonsayisi);
+
+//   if (piyonsayisi >= 7) {print('aptal');} 
+//   else if (piyonsayisi >= 5) {print('normal');} 
+//   else if (piyonsayisi >= 3) {print('zeki');} 
+//   else {print('bilgin');}
+  
+  piyonsayisi>=7?print('aptal')
+    :piyonsayisi>=5?print('normal')
+      :piyonsayisi>=3?print('zeki')
+        :print('bilgin');
+  
+}
