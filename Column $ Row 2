@@ -1,0 +1,62 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(BenimUyg());
+}
+
+//stateless
+class BenimUyg extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        backgroundColor: Colors.black,
+        body: SafeArea(
+          child: Row(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Container(
+                child: Text('1.Kutu'),
+                color: Colors.white,
+                height: 100,
+                // width: 200,
+              ),
+              SizedBox(height: 30, width: 20),
+              Container(
+                // margin: EdgeInsets.all(21.0),
+                color: Colors.blue,
+                height: 100,
+                // width: 200,
+                child: Text('2.Kutu'),
+              ),
+              SizedBox(height: 30, width: 20),
+              Container(
+                color: Colors.pinkAccent,
+                height: 100,
+                // width: 200,
+                child: Text('3.Kutu'),
+              ),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.green,
+                  ),
+                  SizedBox(height: 45),
+                  Container(
+                    height: 50,
+                    width: 50,
+                    color: Colors.yellow,
+                  )
+                ],
+              ),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+}
